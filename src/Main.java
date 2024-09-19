@@ -2,6 +2,8 @@ import queues.Employee;
 import queues.arrayQueue.ArrayQueue;
 import queues.circularQueue.CircularQueue;
 
+import static queues.challenge.palindrome.isPalindrome;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("ArrayQueue");
@@ -37,8 +39,11 @@ public class Main {
         System.out.println("peek (): " + circularQueue.peek());
         circularQueue.printQueue();
 
+        System.out.println("Challenge isPalindrome");
 
-
-
+        System.out.println(isPalindrome("moez"));
+        System.out.println(isPalindrome("lolol"));
+        System.out.println(isPalindrome("mohamed"));
+        System.out.println(isPalindrome("i did, did i"));
     }
 }
